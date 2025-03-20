@@ -4,6 +4,10 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 
 dotenv.config();
+
+const cors = require('cors');
+app.use(cors({ origin: 'https://your-frontend.vercel.app' }));
+
 const app = express();
 
 app.use(cors());
